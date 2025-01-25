@@ -447,3 +447,86 @@ footer {
         padding: 0;
     }
 }
+
+@media (max-width: 1024px) {
+    /* Services Section */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .social-platforms {
+        flex-direction: column;
+    }
+
+    .about-content {
+        padding: 50px 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .primary-nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 5%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    .services-section h2,
+    .testimonials-section h2,
+    .social-connect-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .service-card {
+        padding: 20px 10px;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .community-challenges ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial blockquote {
+        font-size: 1.2rem;
+    }
+}
